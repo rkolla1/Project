@@ -1,0 +1,27 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-heartrate-dev-130052-authRole",
+            "UnauthRoleArn": "arn:aws:iam::272184526412:role/amplify-heartrate-dev-130052-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::272184526412:role/amplify-heartrate-dev-130052-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-heartrate-dev-130052-deployment",
+            "UnauthRoleName": "amplify-heartrate-dev-130052-unauthRole",
+            "StackName": "amplify-heartrate-dev-130052",
+            "StackId": "arn:aws:cloudformation:us-west-2:272184526412:stack/amplify-heartrate-dev-130052/3985f540-1b77-11ea-bdfe-02b0d23de91c",
+            "AmplifyAppId": "d1jdx332uamnd6"
+        },
+        "categories": {
+            "auth": {
+                "heartrate0b014d2d": {}
+            },
+            "notifications": {
+                "Pinpoint": {
+                    "Name": "HeartRateP1dk0-dev",
+                    "Id": "fc18d32d23a349f3b83ce16dcb23b87c",
+                    "Region": "us-west-2"
+                }
+            }
+        }
+    }
+}

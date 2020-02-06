@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".heart_rate_details">
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@+id/barchart"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"/>
+
+    <RelativeLayout
+        android:id="@+id/li"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/line"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Average"
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="15sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:text=" - - "
+            android:textColor="#ffffff"
+
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/li"
+        android:background="@android:color/transparent"
+        tools:listitem="@layout/data" />
+
+</RelativeLayout>
