@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.example.heartrate"
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+    implementation 'pl.bclogic:pulsator4droid:1.0.3'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    //Firebase dependecies
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    //Basic android dependencies
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation "com.android.support:support-compat:28.0.0"
+    implementation 'us.belka:androidtoggleswitch:1.2.2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //Ble dependencies
+    implementation files('libs/polar-ble-sdk.aar')
+    implementation files('libs/polar-protobuf-release.aar')
+    implementation 'com.google.protobuf:protobuf-java:3.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.5'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.4'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    implementation 'com.amazonaws:aws-android-sdk-sns:2.+'
+    implementation 'com.google.android.gms:play-services-auth:15.0.1'
+
+    implementation 'com.google.firebase:firebase-core:17.2.0'
+    implementation 'com.google.firebase:firebase-messaging:19.0.0'
+
+    implementation 'com.amazonaws:aws-android-sdk-pinpoint:2.+'
+    implementation 'com.amazonaws:aws-android-sdk-core:2.+'
+    implementation 'com.amazonaws:aws-android-sdk-ddb-mapper:2.15.+'
+    implementation 'com.amplifyframework:core:0.9.0'
+    implementation 'com.amplifyframework:aws-api:0.9.0'
+
+    implementation 'com.amazonaws:aws-android-sdk-auth-ui:2.+'
+    implementation 'com.amazonaws:aws-android-sdk-auth-userpools:2.+'
+    implementation 'com.amazonaws:aws-android-sdk-mobile-client:2.+'
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+
+    implementation 'com.github.maayyaannkk:ImagePicker:1.0.4'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+}
+apply plugin: 'com.google.gms.google-services'

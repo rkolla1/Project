@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".information">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:layout_alignParentTop="true">
+
+
+
+        <ImageView
+            android:id="@+id/hr"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/white"
+            tools:ignore="VectorDrawableCompat" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Heart Rate"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:textSize="33sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="center">
+
+
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_edit_black_24dp">
+
+        </ImageView>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        android:gravity="left"
+        android:layout_below="@+id/linear1"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:elevation="12dp"
+            android:id="@+id/view2"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="center"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/ic_add_a_photo"
+                tools:ignore="VectorDrawableCompat"
+                android:clickable="false">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"
+            android:hint="Name"
+            android:textColorHint="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:layout_marginTop="15dp"
+            android:enabled="false"
+            >
+
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:text="Gender">
+
+        </TextView>
+
+        <!--<Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:entries="@array/Gender_array"/>-->
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:buttonTint="#ffffff"
+                android:text="Male">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="30dp"
+                android:buttonTint="#ffffff"
+                android:text="Female"></RadioButton>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"
+            android:hint="Age"
+            android:textColorHint="#ffffff"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#ffffff"
+            android:enabled="false"
+            >
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"
+            android:hint="Weight(KG)"
+            android:textColorHint="#ffffff"
+            android:layout_marginTop="25dp"
+            android:enabled="false"
+            android:backgroundTint="#ffffff"
+            >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/doctor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"
+            android:hint="Doctor"
+            android:textColorHint="#ffffff"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#ffffff"
+            android:enabled="false"
+            >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="SAVE"
+            android:visibility="invisible"
+            android:textAllCaps="false"
+            android:textColor="#FE5295"
+            android:textSize="17sp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

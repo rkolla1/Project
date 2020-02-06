@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+app:cardBackgroundColor="@android:color/transparent"
+android:layout_marginRight="15dp"
+android:layout_marginLeft="15dp"
+android:layout_height="80dp">
+
+<TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif"
+    android:text="VINEEL"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    android:layout_centerVertical="true"
+    android:textSize="20sp"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginTop="20dp">
+
+
+    <ImageView
+        android:id="@+id/hrim"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/hrim">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Average"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/average_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:fontFamily="sans-serif"
+            android:text="68 Bpm"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_chevron_right_black_24dp">
+
+    </ImageView>
+
+
+
+</LinearLayout>
+
+<View
+    android:id="@+id/line"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#ffffff"/>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "746968855403",
+    "firebase_url": "https://heartdata-a906e.firebaseio.com",
+    "project_id": "heartdata-a906e",
+    "storage_bucket": "heartdata-a906e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746968855403:android:1eb4f4c6d955240f17922e",
+        "android_client_info": {
+          "package_name": "com.example.heartrate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746968855403-5lfsnr04gnil5slbnhi38bqgo8f22q3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ2KAkLYc_kqApUv-GeVtKxFInytbmyl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746968855403-5lfsnr04gnil5slbnhi38bqgo8f22q3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

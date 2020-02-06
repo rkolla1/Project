@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:background="@drawable/bg"
+    tools:context=".scan">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Heart Rate"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="33sp">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="68 BPM"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="125dp"
+        android:layout_alignTop="@+id/pulsator"
+        android:layout_centerHorizontal="true"
+        android:textSize="33sp">
+    </TextView>
+
+
+
+    <!--<com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Pulse"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:SpinKit_Color="#ffffff"
+        android:layout_centerInParent="true"
+        />
+-->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:background="@drawable/circle_shape"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="135dp"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:progress="0" />
+
+
+    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+        android:id="@+id/pulsator"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:pulse_count="3"
+        app:pulse_duration="3000"
+        app:pulse_repeat="0"
+        app:pulse_color="#e5e5e5"
+        app:pulse_startFromScratch="true"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        app:pulse_interpolator="Linear">
+    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="Start"
+        android:textSize="30sp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/pulsator"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pulsator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif"
+        android:text="Stop"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"></Button>
+
+
+
+</RelativeLayout>

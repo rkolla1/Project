@@ -1,0 +1,17 @@
+{
+    "auth": {
+        "heartrate0b014d2d": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": []
+        }
+    },
+    "notifications": {
+        "HeartRateP1dk0": {
+            "service": "Pinpoint",
+            "channels": [
+                "FCM"
+            ]
+        }
+    }
+}
